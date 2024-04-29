@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #fff;
+    --main-color: #03b32e;
+    --font-color: #231f20;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 7rem 7% 2rem;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    border: 1px none;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+span {
+    color: var(--main-color);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    color: var(--main-color);
+}
+
+/*                            */
+/*           HEADER           */
+/*                            */
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+}
+
+.logoContainer {
+    text-align: center;
+    align-content: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--font-color);
+    padding: 0;
+    cursor: pointer;
+    width: 200px;
+    transition: all .3s;
+}
+
+.logo:hover {
+    transform: scale(0.95);
+}
+
+nav {
+    align-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0%;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links a {
+    align-content: center;
+    border-radius: 0;
+    margin: 0 20px;
+    padding: 10px 0 5px 0;
+    font-weight: 800;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    color: var(--font-color);
+    transition: .3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+/*                            */
+/*            HOME            */
+/*                            */
+
+.home {
+    align-content: center;
+    text-align: center;
+}
+
+.home img {
+    width: 500px;
+    margin: 50px;
+}
+
+.homeTitle {
+    font-size: 3rem;
+    color: var(--font-color);
+}
+
+
+
+
+
+
+
+
