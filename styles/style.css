@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+@import url('https://fonts.cdnfonts.com/css/garet');
 
 :root {
     --bg-color: #fff;
@@ -11,8 +6,13 @@
     --font-color: #231f20;
 }
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Garet", sans-serif;
     min-height: 100vh;
     margin: 0;
     animation: fadeIn ease 3s;
@@ -46,7 +46,7 @@ span {
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 0;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -69,18 +69,14 @@ header {
     background-color: var(--bg-color);
 }
 
-.logoContainer {
-    text-align: center;
-    align-content: center;
-}
-
 .logo {
     font-size: 2rem;
     color: var(--font-color);
     padding: 0;
     cursor: pointer;
     width: 200px;
-    transition: all .3s;
+    transition: all .3s ease;
+    margin-left: 15px;
 }
 
 .logo:hover {
@@ -107,16 +103,49 @@ nav {
     border-radius: 0;
     margin: 0 20px;
     padding: 10px 0 5px 0;
-    font-weight: 800;
+    font-weight: 500;
     border-bottom: 3px solid transparent;
     text-decoration: none;
     color: var(--font-color);
-    transition: .3s ease;
+    transition: all .3s ease;
 }
 
 .nav-links a:hover {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
+}
+
+.loginBtn {
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--font-color);
+    border-bottom: 3px solid var(--main-color);
+    border-radius: 0;
+    padding: 10px 0 5px 0;
+    transition: all .3s ease;
+}
+
+.loginBtn:hover {
+    transform: scale(0.95);
+}
+
+.signupBtn {
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: var(--bg-color);
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.signupBtn:hover {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    transform: scale(0.95);
 }
 
 /*                            */
@@ -125,18 +154,65 @@ nav {
 
 .home {
     align-content: center;
-    text-align: center;
+    display: flex;
+    padding: 7rem 4% 2rem;
 }
 
-.home img {
-    width: 500px;
-    margin: 50px;
+.homeText {
+    align-content: center;
 }
 
 .homeTitle {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--font-color);
 }
+
+.aboutBtn {
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    font-size: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    padding: 20px 40px;
+    margin-top: 5rem;
+    transition: all 0.3s ease;
+}
+
+.aboutBtn:hover {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    transform: scale(0.95);
+}
+
+.meetBtn {
+    font-weight: 600;
+    color: var(--font-color);
+    border-bottom: 3px solid var(--main-color);
+    border-radius: 0;
+    padding: 10px 0 5px 0;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.meetBtn:hover {
+    transform: scale(0.95);
+}
+
+.productImg {
+    margin-left: auto;
+    width: 50%;
+    align-content: center;
+    text-align: center;
+}
+
+.productImg img {
+    float: right;
+    width: 100%;
+}
+
 
 
 
