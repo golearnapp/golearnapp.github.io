@@ -224,7 +224,6 @@ nav {
 }
 
 .aboutImg {
-    margin-left: auto;
     width: 50%;
     align-content: center;
 }
@@ -244,11 +243,45 @@ nav {
     align-content: center;
 }
 
-.aboutText a {
-    margin-right: auto;
+.aboutText .meetBtn {
+    font-weight: 600;
+    color: var(--font-color);
+    border-bottom: 2px solid var(--main-color);
+    border-radius: 0;
+    margin: 0;
+    padding: 50px 0 5px 0;
+    transition: all 0.3s ease;
+    float: right;
 }
 
-.aboutText .meetBtn {
+.forTeacher {
+    padding: 2rem 7% 2rem;
+    align-content: center;
+    display: flex;
+}
+
+.teacherText {
+    width: 50%;
+    align-content: center;
+}
+
+.teacherTitle {
+    font-family: "Garet", sans-serif;
+    font-size: 2.5rem;
+    color: var(--font-color);
+}
+
+.teacherImg {
+    width: 50%;
+    align-content: center;
+    text-align: center;
+}
+
+.teacherImg img {
+    width: 80%;
+}
+
+.teacherText .meetBtn {
     font-weight: 600;
     color: var(--font-color);
     border-bottom: 2px solid var(--main-color);
