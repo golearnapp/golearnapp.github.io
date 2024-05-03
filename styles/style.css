@@ -3,8 +3,9 @@
 
 
 :root {
-    --bg-color: #fff;
+    --bg-color: #F9FAFB;
     --main-color: #03b32e;
+    --second-color: #03a52b;
     --font-color: #231f20;
 }
 
@@ -13,9 +14,8 @@
     scroll-behavior: smooth;
 }
 
-body,
-button,
-input {
+body {
+    background-color: var(--bg-color);
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
     margin: 0;
@@ -36,7 +36,8 @@ input {
 
 section {
     padding: 7rem 7% 2rem;
-    min-height: 100vh;
+    min-height: 90vh;
+    background-color: var(--bg-color);
 }
 
 a {
@@ -142,8 +143,8 @@ nav {
 }
 
 .signupBtn:hover {
-    background-color: var(--bg-color);
-    color: var(--main-color);
+    background-color: var(--second-color);
+    color: var(--bg-color);
     transform: scale(0.95);
 }
 
@@ -154,7 +155,7 @@ nav {
 .home {
     align-content: center;
     display: flex;
-    padding: 7rem 4% 2rem;
+    padding: 7rem 4% 0;
 }
 
 .homeText {
@@ -183,8 +184,8 @@ nav {
 }
 
 .aboutBtn:hover {
-    background-color: var(--bg-color);
-    color: var(--main-color);
+    background-color: var(--second-color);
+    color: var(--bg-color);
     transform: scale(0.95);
 }
 
@@ -218,7 +219,7 @@ nav {
 /*                            */
 
 .aboutUs {
-    padding: 2rem 7% 2rem;
+    padding: 0 7%;
     align-content: center;
     display: flex;
 }
@@ -255,7 +256,7 @@ nav {
 }
 
 .forTeacher {
-    padding: 2rem 7% 2rem;
+    padding: 0 7%;
     align-content: center;
     display: flex;
 }

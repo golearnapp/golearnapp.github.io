@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/contactForm.css">
-    <link rel="shortcut icon" type="imagex/png" href="assets/images/favicon.svg">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.svg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Go Learn | Organização e eficiência</title>
 </head>
@@ -87,22 +87,31 @@
                 </p>
                 <a href="" class="meetBtn">CONHEÇA A PLATAFORMA</a>
             </div>
-
             <div class="teacherImg">
                 <img src="assets/images/Webinar-pana.svg" alt="">
             </div>
         </section>
     </div>
     <div class="contactContainer">
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contactForm">
-              
+                <form>
+                    <img class="formIcon" src="assets/images/golearn-logo.svg" alt="">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                    <input type="text" id="instituicao" name="instituicao" placeholder="Instituição" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
+                    <input type="submit" value="Enviar" class="submitBtn">
+                </form>
             </div>
             <div class="contactText">
-                
+                <h2 class="contactTitle">ENTRE EM <br><span>CONTATO</span></h2>
+                <p>Entre em contato para dúvidas, interesses e discutir oportunidades de parceria! Nossa equipe está online de segunda a sexta das 8:00 às 18:00</p>
             </div>
         </section>
     </div>
+
 </body>
 
 </html>
