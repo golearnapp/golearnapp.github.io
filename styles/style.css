@@ -35,8 +35,11 @@ body {
 }
 
 section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     padding: 7rem 7% 2rem;
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: var(--bg-color);
 }
 
@@ -154,12 +157,11 @@ nav {
 
 .home {
     align-content: center;
-    display: flex;
     padding: 7rem 4% 0;
 }
 
 .homeText {
-    width: 50%;
+    grid-column: 1 / 2;
     align-content: center;
 }
 
@@ -204,7 +206,7 @@ nav {
 }
 
 .mockup {
-    width: 50%;
+    grid-column: 2 / 3;
     align-content: center;
     text-align: center;
 }
@@ -219,13 +221,13 @@ nav {
 /*                            */
 
 .aboutUs {
-    padding: 0 7%;
+    padding: 7rem 7% 0;
     align-content: center;
-    display: flex;
+    min-height: 50vh;
 }
 
 .aboutImg {
-    width: 50%;
+    grid-column: 1 / 2;
     align-content: center;
 }
 
@@ -240,7 +242,7 @@ nav {
 }
 
 .aboutText {
-    width: 50%;
+    grid-column: 2 / 3;
     align-content: center;
 }
 
@@ -256,13 +258,13 @@ nav {
 }
 
 .forTeacher {
+    min-height: 50vh;
     padding: 0 7%;
     align-content: center;
-    display: flex;
 }
 
 .teacherText {
-    width: 50%;
+    grid-column: 1 / 2;
     align-content: center;
 }
 
@@ -273,13 +275,10 @@ nav {
 }
 
 .teacherImg {
-    width: 50%;
+    grid-column: 2 / 3;
+    width: 100%;
     align-content: center;
     text-align: center;
-}
-
-.teacherImg img {
-    width: 80%;
 }
 
 .teacherText .meetBtn {

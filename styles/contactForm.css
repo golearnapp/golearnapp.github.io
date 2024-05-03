@@ -1,9 +1,17 @@
+:root {
+  --bg-color: #F9FAFB;
+  --main-color: #03b32e;
+  --second-color: #03a52b;
+  --font-color: #231f20;
+}
+
 .contact {
+  min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
-    padding: 0 10%;
+    padding: 7rem 15% 4rem;
   }
   
   .contactForm {
@@ -31,7 +39,17 @@
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 2px;
-    resize: vertical;
+    resize: none;
+  }
+
+  textarea:focus, input:focus{
+    font-family: "Poppins", sans-serif;
+    outline-color: var(--main-color);
+    color: var(--font-color);
+}
+
+  .contactForm textarea {
+    height: 10rem;
   }
 
   ::placeholder {
@@ -49,6 +67,7 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all .3s ease;
+    margin-bottom: 0;
   }
   
   .contactForm input[type="submit"]:hover {
