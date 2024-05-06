@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.svg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>GoLearn | Acessar sua conta</title>
+    <title>GoLearn | Recuperar sua senha</title>
 </head>
 
 <body>
@@ -31,19 +31,13 @@
         </nav>
     </header>
     <section class="formContainer">
-        <div class="loginBody">
-
-            <form action="login.html" method="get" class="loginForm">
-                <h2 class="formTitle">
-                    Acesse sua <span>conta</span>
-                </h2>
-                <input type="email" placeholder="Email" required />
-                <input type="password" placeholder="Senha" required />
-                <input type="submit" value="Entrar" class="submitBtn">
-                <div class="formLinks">
-                    Não possui uma conta? <a href="signup.html"><span>Cadastre-se</span></a>
-                    <a href="accountRecover.html">Esqueci Minha Senha</a>
-                </div>
+        <div id="recoverBody">
+            <form action="codeInput.html" method="get">
+                <h2 class="formTitle">Recuperar <span>conta</span></h2>
+                <p class="recoverText">Digite o email cadastrado na conta, nós enviaremos um código para redefinir sua
+                    senha.</p>
+                <input type="email" placeholder="Email cadastrado" />
+                <input type="submit" href="" value="Continuar" class="submitBtn" required>
             </form>
         </div>
     </section>

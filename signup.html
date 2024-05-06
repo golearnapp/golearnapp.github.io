@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.svg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>GoLearn | Acessar sua conta</title>
+    <title>GoLearn | Criar conta</title>
 </head>
 
 <body>
@@ -31,18 +31,29 @@
         </nav>
     </header>
     <section class="formContainer">
-        <div class="loginBody">
+        <div id="signupBody">
 
-            <form action="login.html" method="get" class="loginForm">
+            <form action="signup.html" method="get" class="signupForm">
                 <h2 class="formTitle">
-                    Acesse sua <span>conta</span>
+                    Crie sua <span>conta</span>
                 </h2>
-                <input type="email" placeholder="Email" required />
-                <input type="password" placeholder="Senha" required />
-                <input type="submit" value="Entrar" class="submitBtn">
+                <input type="text" name="nome.txt" placeholder="Nome completo" required />
+                <input type="email" name="email.txt" placeholder="Email" required />
+                <input type="number" name="cpf.txt" placeholder="CPF" required />
+                <input type="number" name="ra.txt" placeholder="RA Institucional" />
+                <input type="number" name="telefone.txt" placeholder="Telefone" required />
+                <input type="password" name="senha.txt" placeholder="Senha" required />
+                <p>
+                    Cadastrar como:
+                    <select>
+                        <option value="" required>Selecione...</option>
+                        <option value="Professor" required>Professor</option>
+                        <option value="Aluno" required>Aluno</option>
+                    </select>
+                </p>
+                <input type="submit" value="Criar conta" class="submitBtn">
                 <div class="formLinks">
-                    Não possui uma conta? <a href="signup.html"><span>Cadastre-se</span></a>
-                    <a href="accountRecover.html">Esqueci Minha Senha</a>
+                    Já possui uma conta? <a href="login.html"><span>Entrar</span></a>
                 </div>
             </form>
         </div>

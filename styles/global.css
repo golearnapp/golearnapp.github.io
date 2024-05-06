@@ -69,18 +69,18 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: var(--bg-color);
 }
 
+.logoLink {
+    margin: 2rem;
+    width: 165px;
+}
+
 .logo {
-    font-size: 2rem;
-    color: var(--font-color);
-    padding: 0;
     cursor: pointer;
-    width: 200px;
-    transition: all .3s ease;
-    margin-left: 15px;
+    transition: .3s;
 }
 
 .logo:hover {
@@ -174,7 +174,6 @@ nav {
 .aboutBtn {
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 3px;
     color: var(--bg-color);
     background-color: var(--main-color);
     font-size: 1rem;
