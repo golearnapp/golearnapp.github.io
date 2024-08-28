@@ -1,46 +1,41 @@
-@import url('https://fonts.cdnfonts.com/css/garet');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 :root {
+    font-family: "Poppins", sans-serif;
+    font-size: 62.5%;
     --bg-color: #F9FAFB;
     --main-color: #03b32e;
     --second-color: #03a52b;
     --font-color: #231f20;
 }
 
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
 body {
+    font-size: 1.6rem;
     background-color: var(--bg-color);
-    font-family: "Poppins", sans-serif;
     min-height: 100vh;
     margin: 0;
-    animation: fadeIn ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: flex;
     padding: 7rem 7% 2rem;
     min-height: 100vh;
     background-color: var(--bg-color);
+}
+
+.title {
+    font-weight: 1000;
+    font-size: 4rem;
+    color: var(--font-color);
 }
 
 a {
@@ -50,105 +45,17 @@ a {
     display: inline-block;
 }
 
+p {
+    color: #666;
+    margin-top: 1.6rem;
+}
+
 span {
     color: var(--main-color);
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-}
-
-/*                            */
-/*           HEADER           */
-/*                            */
-
-header {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    justify-content: space-evenly;
-    background-color: var(--bg-color);
-}
-
-.logoLink {
-    margin: 2rem;
-    width: 165px;
-}
-
-.logo {
-    cursor: pointer;
-    transition: .3s;
-}
-
-.logo:hover {
-    transform: scale(0.95);
-}
-
-nav {
-    align-content: center;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0%;
-    text-align: center;
-}
-
-.nav-links li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav-links a {
-    align-content: center;
-    border-radius: 0;
-    margin: 0 20px;
-    padding: 10px 0 5px 0;
-    font-weight: 400;
-    border-bottom: 3px solid transparent;
-    text-decoration: none;
-    color: var(--font-color);
-    transition: all .3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
-}
-
-.loginBtn {
-    font-weight: 800;
-    text-decoration: none;
-    color: var(--font-color);
-    border-bottom: 2px solid var(--main-color);
-    border-radius: 0;
-    padding: 10px 0 5px 0;
-    transition: all .3s ease;
-}
-
-.loginBtn:hover {
-    transform: scale(0.95);
-}
-
-.signupBtn {
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--bg-color);
-    border: 1px solid var(--main-color);
-    border-radius: 50px;
-    background-color: var(--main-color);
-    padding: 0.7rem 1.5rem;
-    margin-left: 15px;
-    transition: all 0.3s ease;
-}
-
-.signupBtn:hover {
-    background-color: var(--second-color);
-    color: var(--bg-color);
-    transform: scale(0.95);
+    display: none;
 }
 
 /*                            */
@@ -160,57 +67,48 @@ nav {
     padding: 7rem 4% 0;
 }
 
-.homeText {
-    grid-column: 1 / 2;
+.home-text {
+    width: 50%;
     align-content: center;
 }
 
-.homeTitle {
-    font-family: "Garet", sans-serif;
-    font-size: 2.5rem;
-    color: var(--font-color);
-}
-
-.aboutBtn {
+.about-btn {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     color: var(--bg-color);
-    background-color: var(--main-color);
-    font-size: 1rem;
-    border: 1px solid var(--main-color);
-    border-radius: 50px;
-    padding: 1rem 2.5rem;
-    margin-top: 5rem;
-    transition: all 0.3s ease;
-}
-
-.aboutBtn:hover {
     background-color: var(--second-color);
-    color: var(--bg-color);
-    transform: scale(0.95);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 1.2rem 2.7rem;
+    margin-top: 5rem;
 }
 
-.meetBtn {
+.about-btn:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.meet-btn {
     font-weight: 600;
     color: var(--font-color);
     border-bottom: 2px solid var(--main-color);
     border-radius: 0;
-    padding: 10px 0 5px 0;
+    padding: 1rem 0 .5rem 0;
     margin-left: 20px;
-    transition: all 0.3s ease;
+    transition: all .2s ease;
 }
 
-.meetBtn:hover {
+.meet-btn:hover {
     transform: scale(0.95);
 }
 
-.mockup {
-    grid-column: 2 / 3;
+.home-img {
+    width: 50%;
     align-content: center;
     text-align: center;
 }
 
-.mockup img {
+.home-img img {
     width: 100%;
 }
 
@@ -219,73 +117,102 @@ nav {
 /*           ABOUT            */
 /*                            */
 
-.aboutUs {
+.about-us {
     padding: 7rem 7% 0;
     align-content: center;
     min-height: 50vh;
+    flex-direction: row-reverse;
 }
 
-.aboutImg {
-    grid-column: 1 / 2;
+.about-img {
+    width: 50%;
     align-content: center;
+    text-align: center;
 }
 
-.aboutImg img {
+.about-img img {
     width: 80%;
 }
 
-.aboutTitle {
-    font-family: "Garet", sans-serif;
-    font-size: 2.5rem;
-    color: var(--font-color);
-}
-
-.aboutText {
-    grid-column: 2 / 3;
+.about-text {
+    width: 50%;
     align-content: center;
 }
 
-.aboutText .meetBtn {
+.about-text .meet-btn {
     font-weight: 600;
-    color: var(--font-color);
     border-bottom: 2px solid var(--main-color);
     border-radius: 0;
     margin: 0;
-    padding: 50px 0 5px 0;
-    transition: all 0.3s ease;
+    padding: 5rem 0 .5rem 0;
+    transition: all .2s ease;
     float: right;
 }
 
-.forTeacher {
+.for-teacher {
     min-height: 50vh;
     padding: 0 7%;
     align-content: center;
 }
 
-.teacherText {
-    grid-column: 1 / 2;
+.teacher-text {
+    width: 50%;
     align-content: center;
 }
 
-.teacherTitle {
-    font-family: "Garet", sans-serif;
-    font-size: 2.5rem;
-    color: var(--font-color);
-}
-
-.teacherImg {
-    grid-column: 2 / 3;
-    width: 100%;
+.teacher-img {
+    width: 50%;
     align-content: center;
     text-align: center;
 }
 
-.teacherText .meetBtn {
+.teacher-text .meet-btn {
     font-weight: 600;
     color: var(--font-color);
     border-bottom: 2px solid var(--main-color);
     border-radius: 0;
     margin: 0;
-    padding: 50px 0 5px 0;
-    transition: all 0.3s ease;
+    padding: 5rem 0 .5rem 0;
+    transition: all .2s ease;
+}
+
+/*                            */
+/*          CONTACT           */
+/*                            */
+
+.contact {
+    padding: 7rem 7%;
+    align-content: center;
+    flex-direction: row-reverse;
+    min-height: 100vh;
+}
+
+.contact form {
+    width: 50%;
+    align-content: center;
+    margin: 0;
+    padding: 5rem;
+}
+
+.contact-text {
+    padding: 5rem;
+    width: 50%;
+    align-content: center;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.social-icons i {
+    font-size: 4rem;
+    color: var(--font-color);
+    padding-right: 2rem;
+    transition: .2s all ease;
+}
+
+.social-icons i:hover {
+    color: var(--main-color);
+
 }

@@ -1,0 +1,56 @@
+.devs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.devs h1 {
+    margin-bottom: 5rem;
+}
+
+.profile-wrapper {
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 2rem 0
+}
+
+.profile h1 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.profile img {
+    width: 55%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.profile-wrapper .profile i {
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0;
+    font-size: 3rem;
+    box-shadow: none;
+    transition: all .3s ease;
+}
+
+.profile-wrapper .profile i:hover {
+    opacity: 0.8;
+}
+
+.profile-wrapper .profile .bxl-github {
+    background-color: #24292e;
+    color: #fff;
+}
+
+.profile-wrapper .profile .bxl-linkedin {
+    background-color: #0a66c2;
+    color: #fff;
+}

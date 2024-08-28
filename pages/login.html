@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/forms.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/images/favicon.svg"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>GoLearn | Entrar</title>
+  </head>
+  <body>
+    <div id="page" class="flex">
+      <div>
+        <a href="../index.html#home"
+          ><img src="../assets/images/logo.svg" alt=""
+        /></a>
+        <main class="main-login">
+          <div class="headline"><h1>Acesse a plataforma</h1></div>
+          <p>
+            Faça login ou registre-se para começar a estudar com a GoLearn ainda
+            hoje.
+          </p>
+          <form action="">
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <div class="label-wrapper">
+                <label for="senha">Senha</label>
+                <a href="account-recover.html">Esqueceu a senha?</a>
+              </div>
+              <input
+                id="senha"
+                type="password"
+                name="senha"
+                placeholder="Digite sua senha"
+                required
+              />
+              <i
+                onclick="togglePassword()"
+                class="eye show show-password bx bx-show"
+              ></i>
+              <i
+                onclick="togglePassword()"
+                id="hide"
+                class="eye hide hide-password bx bx-hide"
+              ></i>
+            </div>
+
+            <button type="submit">Entrar</button>
+
+            <div class="create-account">
+              <p>Não possui uma conta? <a href="signup.html">Cadastre-se</a></p>
+            </div>
+          </form>
+        </main>
+      </div>
+      <img src="../assets/images/banner.svg" alt="" />
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

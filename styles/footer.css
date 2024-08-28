@@ -1,88 +1,47 @@
-:root {
-  --bg-color: #F9FAFB;
-  --main-color: #03b32e;
-  --second-color: #03a52b;
-  --font-color: #231f20;
+footer {
+  background-color: #333;
+  padding: 2rem;
+  text-align: center;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  footer h5 {
-    color: #ccc;
-    margin-bottom: 10px;
-  }
-  
-  footer ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  footer ul li {
-    margin-bottom: 5px;
-  }
-  
-  footer ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
+.footer-links a {
+  margin: 1rem;
+  color: #fff;
+  transition: .2s all ease;
+}
 
-  footer ul i {
-    margin-right: 10px;
-  }
-  
-  footer ul li a:hover {
-    color: #ccc;
-  }
-  
-  footer .social-links {
-    display: flex;
-  }
-  
-  footer .social-links li {
-    margin: 0;
-  }
-  
-  footer .social-links li a {
-    font-size: 20px;
-    color: #ccc;
-    transition: color 0.3s;
-  }
-  
-  footer .social-links li a:hover {
-    color: #fff;
-  }
+.footer-links a:hover {
+  color: var(--main-color);
+}
 
-  .copy {
-    width: 100%;
-    background-color: var(--main-color);
-    text-align: center;
-  }
+.back-to-top {
+  position: relative;
+  padding: 1rem;
+  margin: 2rem 2rem 0;
+  background-color: var(--second-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 1rem;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .copy h3 {
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--font-color);
-    margin: 0;
-    display: inline-block;
-    padding: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    footer .container {
-      padding: 0;
-    }
-  
-    footer .row {
-      flex-wrap: wrap;
-    }
-  
-    footer .col-md-4 {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
+.back-to-top:hover {
+  background-color: var(--main-color);
+}
+
+.copy {
+  width: 100%;
+  background-color: var(--main-color);
+  text-align: center;
+}
+
+.copy h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--bg-color);
+  margin: 0;
+  display: inline-block;
+  padding: 1rem;
+}
