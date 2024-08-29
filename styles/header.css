@@ -7,11 +7,12 @@ header {
     z-index: 100;
     padding: 1rem 0;
     justify-content: space-around;
+    align-items: center;
     background-color: var(--bg-color);
+    padding: 3rem 1.5rem;
 }
 
 .logoLink {
-    margin: 1rem;
     width: 16.5rem;
 }
 
@@ -25,21 +26,13 @@ nav {
 }
 
 .nav-links {
-    list-style: none;
-    padding: 0%;
-    text-align: center;
-}
-
-.nav-links li {
-    display: inline-block;
-    padding: 0 2rem;
+    display: flex;
+    gap: 8rem;
 }
 
 .nav-links a {
     align-content: center;
     border-radius: 0;
-    margin: 0 2rem;
-    padding: 1rem 0 .5rem 0;
     font-weight: 400;
     border-bottom: 3px solid transparent;
     text-decoration: none;
@@ -78,4 +71,29 @@ nav {
 
 .signup-btn:hover {
     background-color: var(--main-color);
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logoLink {
+        margin: 1rem;
+        width: 12rem;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+
+    nav + nav a {
+        font-size: 14px;
+    }
+
+    .signup-btn {
+        padding: 0.5rem 1rem;
+    }
 }
