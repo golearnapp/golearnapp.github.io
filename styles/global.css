@@ -7,6 +7,7 @@
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    list-style: none;
 }
 
 :root {
@@ -149,6 +150,10 @@ span {
     float: right;
 }
 
+/*                            */
+/*         FOR TEACHER        */
+/*                            */
+
 .for-teacher {
     min-height: 50vh;
     padding: 0 7%;
@@ -215,4 +220,66 @@ span {
 .social-icons i:hover {
     color: var(--main-color);
 
+}
+
+@media (max-width: 768px) {
+    .home, .about-us, .for-teacher, .contact {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+/*                            */
+/*            HOME            */
+/*                            */
+
+    [class$="-text"] {
+        width: 100%;
+        align-content: center;
+        text-align: center;
+    }
+
+    [class$="-img"] {
+        width: 95%;
+        margin: auto;
+    }
+
+/*                            */
+/*           ABOUT            */
+/*                            */
+
+    .about-img {
+        width: 95%;
+        margin: auto;
+    }
+
+    .about-text .meet-btn, .meet-btn {
+        margin: auto;
+        padding: 5rem 0 .5rem 0;
+        float: none;
+    }
+
+/*                            */
+/*         FOR TEACHER        */
+/*                            */
+
+    .for-teacher {
+        padding-top: 2rem;
+    }
+
+/*                            */
+/*          CONTACT           */
+/*                            */
+
+    .contact form {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }
